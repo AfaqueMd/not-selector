@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        main{
+            background-color: black;
+            padding: 100px;
+        }
+        h1{
+            background: linear-gradient(0deg, rgba(128,111,145,1) 22%, rgba(188,53,126,1) 100%);
+            font-weight: bold;
+            text-align: center;
+            color: transparent;
+            background-clip: text;
+            font-size: 50px;
+        }
+        main>div{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+        }
+        main>div>div{
+            padding: 100px 80px;
+            border-radius: 5px;
+        }
+        main>div>div:nth-child(1){
+            background-color: rgb(252, 252, 79);
+            border: 4px solid yellow;
+        }
+        main>div>div:nth-child(2){
+            background-color: rgb(248, 64, 248);
+            border: 4px solid rgb(199, 3, 199);
+        }
+        main>div>div:nth-child(3){
+            background-color: rgb(253, 56, 56);
+            border: 4px solid rgb(250, 18, 18);
+        }
+        main>div>div:nth-child(4){
+            background-color: rgb(45, 255, 45);
+            border: 4px solid rgb(97, 255, 97);
+        }
+        /* main>div:hover{
+            pointer-events: none;
+        } */
+
+        main>div:hover .cards:not(:hover){
+            opacity: 0.7;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>CARDS</h1>
+        <div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+        </div>
+    </main>
+</body>
+</html>
